@@ -1,0 +1,7 @@
+nohup ~/rs.sh >/dev/null 2>&1 &
+sudo nohup ./rs.sh >/dev/null 2>&1 &
+
+sudo sh ~/tomcat7/bin/shutdown.sh
+sudo sh ~/tomcat7/bin/startup.sh
+
+java -Xms32m -Xmx800m -jar ~/ChatBot.jar &
